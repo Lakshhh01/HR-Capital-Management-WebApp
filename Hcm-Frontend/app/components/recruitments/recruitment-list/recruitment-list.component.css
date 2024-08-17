@@ -1,0 +1,54 @@
+.table-container {
+  padding: 20px;
+  background-image: url('./bgimg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.recruitment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.6); /* Black with reduced opacity */
+  color: #ffffff;
+}
+
+.recruitment-table th,
+.recruitment-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ffffff;
+}
+
+.recruitment-table thead {
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly darker for the header */
+}
+
+.recruitment-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Lighten row on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5); /* Light effect behind the row */
+}
+
+.table-actions button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px 10px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.table-actions button:hover {
+  background-color: #f2f2f2; /* Slightly lighter background on hover */
+  color: #000000; /* Keep text black on hover */
+}
+
+.h3{
+  margin-left: 450px;
+}
+
+.btn{
+  margin-left: 200px;
+}

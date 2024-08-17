@@ -1,0 +1,43 @@
+<!-- <p>edit-recruitment works!</p> -->
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Edit Recruitment </h2>
+    </div>
+    <div class="panel-body">
+        <form (ngSubmit)="updateRecruitment()">
+            <div class="form-group">
+                <label for="recruitmentId">Recruitment ID</label>
+                <input type="text" id="recruitmentId" class="form-control" [(ngModel)]="recruitment.recruitmentId"
+                    name="recruitmentId" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="noOfVacancies">Vacancies</label>
+                <input type="number" id="noOfVacancies" class="form-control" [(ngModel)]="recruitment.noOfVacancies"
+                    name="noOfVacancies" required>
+            </div>
+            <div class="form-group">
+                <label for="skillRequired">Skills Required</label>
+                <input type="text" id="skillRequired" class="form-control" [(ngModel)]="recruitment.skillRequired"
+                    name="skillRequired" required>
+            </div>
+            <div class="form-group">
+                <label for="minYearOfExperience">Experience Required</label>
+                <input type="minYearOfExperience" id="minYearOfExperience" class="form-control"
+                    [(ngModel)]="recruitment.minYearOfExperience" name="minYearOfExperience" required>
+            </div>
+            <div class="form-group">
+                <label for="deptID">Department ID</label>
+                <input type="deptID" id="deptID" class="form-control" [(ngModel)]="recruitment.deptID" name="deptID"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="deptName">Department Name</label>
+                <input type="text" id="deptName" class="form-control" [(ngModel)]="recruitment.deptName" name="deptName"
+                    required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>

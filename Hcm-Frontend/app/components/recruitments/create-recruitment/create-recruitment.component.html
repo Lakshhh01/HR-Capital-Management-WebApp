@@ -1,0 +1,36 @@
+<!-- <p>create-recruitment works!</p> -->
+<h3 class="h3"> +Add Recruitment</h3>
+<form (ngSubmit)="onSubmit()" #recruitmentForm="ngForm">
+    <div class="form-group">
+        <label for="recruitmentId">Recruitment ID</label>
+        <input type="text" class="form-control" id="recruitmentId" [(ngModel)]="recruitment.recruitmentId"
+            name="recruitmentId" required>
+    </div>
+
+    <div class="form-group mt-3">
+        <label for="noOfVacancies">Vacancies</label>
+        <input type="text" class="form-control" id="noOfVacancies" [(ngModel)]="recruitment.noOfVacancies"
+            name="noOfVacancies" required>
+    </div>
+    <div class="form-group mt-3">
+        <label for="skillRequired">Skills Required</label>
+        <input type="text" class="form-control" id="skillRequired" [(ngModel)]="recruitment.skillRequired"
+            name="skillRequired" required>
+    </div>
+    <div class="form-group mt-3">
+        <label for="minYearOfExperience">Min Experience in years</label>
+        <input type="text" class="form-control" id="minYearOfExperience" [(ngModel)]="recruitment.minYearOfExperience"
+            name="minYearOfExperience" required>
+    </div>
+    <div class="form-group mt-3">
+        <label for="deptID">Department ID</label>
+        <input type="text" class="form-control" id="deptID" [(ngModel)]="recruitment.deptID" name="deptID" required>
+    </div>
+    <div class="fom-group mt-3">
+        <label for="deptName">Department Name</label>
+        <input type="text" class="form-control" id="deptName" [(ngModel)]="recruitment.deptName" name="deptName"
+            required> <!--name="Name" should be same as backend entity, and model-->
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Submit</button>
+</form>

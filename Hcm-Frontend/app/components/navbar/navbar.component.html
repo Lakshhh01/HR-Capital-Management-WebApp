@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <img class="hcm-logo" src="https://static.vecteezy.com/system/resources/previews/039/885/598/non_2x/change-management-icon-line-illustration-vector.jpg" alt="HR Capital Management Logo"/>    <a class="navbar-brand" href="#">HR Capital Management</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" [routerLink]="['/home']">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/employee']">Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/trainings']">Trainings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/recruitments']">Recruitments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']">ContactUs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']">About</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Profile and Notification Icons -->
+     <div class="pn">
+
+       <span class="me-3 mt-2">
+         <i class="bi bi-bell small fs-4"></i> 
+    </span>
+    <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="bi bi-person-circle h2"></i> <!-- Profile Icon (using Bootstrap Icons) -->
+  </a>
+  
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Logout  <i class="bi bi-box-arrow-right"></i></a></li>
+  </ul>
+  
+</div>
+
+</div>
+  </div>
+</nav>

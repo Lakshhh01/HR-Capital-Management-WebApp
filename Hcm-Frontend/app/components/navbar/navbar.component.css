@@ -1,0 +1,24 @@
+.navbar {
+    margin-bottom: 0px;
+    position:relative;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    padding: 10px 20px;
+   
+  }
+  .navbar-nav .nav-item .nav-link:hover {
+    background-color: grey;
+    border-radius: 50px;
+    
+  }
+  .navbar .container-fluid .pn{
+    color: white;
+    display: flex;
+  }
+  .hcm-logo {
+    height: 40px; /* Adjust the height according to your needs */
+    margin-right: 10px; /* Space between the logo and brand name */
+}
+
+  

@@ -1,0 +1,45 @@
+<h3 class="h3"> +Add Employee</h3>
+<form (ngSubmit)="onSubmit()" #employeeForm="ngForm">
+  <div class="form-group">
+      <label for="EmpID">EmpID</label>
+      <input type="text" class="form-control" id="EmpID" [(ngModel)]="employee.empId" name="empId" required> 
+  </div>
+  <div class="fom-group mt-3">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" [(ngModel)]="employee.empName" name="empName" required> <!--name="empName" should be same as backend entity, adn employeemodel-->
+  </div>
+  <div class="form-group mt-3">
+      <label for="Salary">Salary</label>
+      <input type="text" class="form-control" id="Salary" [(ngModel)]="employee.salary" name="salary" required>
+  </div>
+  <div class="form-group mt-3">
+      <label for="Gender">Gender</label>
+      <input type="text" class="form-control" id="Gender" [(ngModel)]="employee.gender" name="gender" required>
+  </div>
+  <div class="form-group mt-3">
+      <label for="Email">Email Id</label>
+      <input type="email" class="form-control" id="Email" [(ngModel)]="employee.email" name="email" required>
+  </div>
+  <div class="form-group mt-3">
+      <label for="DOB">DOB</label>
+      <input type="text" class="form-control" id="DOB" [(ngModel)]="employee.dob" name="dob" required>
+  </div>
+  <div class="form-group mt-3">
+      <label for="Address">Address</label>
+      <input type="text" class="form-control" id="Address" [(ngModel)]="employee.address" name="address" required>
+  </div>
+  <div class="form-group mt-3">
+      <label for="coreskill">coreskill</label>
+      <input type="text" class="form-control" id="coreskill" [(ngModel)]="employee.coreskill" name="coreskill" required> 
+  </div>
+  <div class="form-group mt-3">
+      <label for="YOE">Experience in Years</label>
+      <input type="text" class="form-control" id="YOE" [(ngModel)]="employee.experienceInYears" name="experienceInYears" required> <!-- Changed 'yoe' to 'experienceInYears' -->
+  </div>
+  <div class="form-group mt-3">
+      <label for="Department">Department</label>
+      <input type="text" class="form-control" id="Department" [(ngModel)]="employee.department" name="department" required>
+  </div>
+  <button type="submit" class="btn btn-success mt-3">Submit</button>
+</form>
+<h1> giving bad request 404 - resolve this</h1>

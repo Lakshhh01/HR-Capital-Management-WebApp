@@ -1,0 +1,79 @@
+/* Panel and Form Styles */
+.panel {
+    background-color: #2c2c2c; /* Dark background for the panel */
+    border: 1px solid #444; /* Slightly lighter border for distinction */
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Dark shadow for depth */
+    width: 80%; /* Adjust the panel width */
+    margin: 0 auto; /* Center the panel */
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.panel-primary .panel-heading {
+    background-color: #1a1a1a; /* Dark background for the heading */
+    border-bottom: 1px solid #444; /* Border below heading */
+    color: #fff; /* White text for heading */
+    padding: 15px; /* Padding for better spacing */
+}
+
+.panel-heading h2 {
+    margin: 0;
+    font-size: 24px; /* Larger font size */
+    text-align: center;
+}
+
+.panel-body {
+    padding: 20px; /* Extra padding for the panel body */
+    color: #ddd; /* Light grey text color */
+    margin-right: 150px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Labels and inputs in a 1:2 ratio */
+    grid-gap: 15px; /* Spacing between fields */
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.form-control {
+    background-color: #333; /* Dark background for inputs */
+    border: 1px solid #555; /* Slightly lighter border */
+    color: #eee; /* Light text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for better usability */
+    width: 100%; /* Full width of grid column */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow on focus */
+}
+
+/* Labels */
+.form-group label {
+    color: #bbb; /* Lighter grey color for labels */
+    font-weight: bold; /* Bold text for labels */
+    text-align: right;
+}
+
+/* Button */
+.btn-primary {
+    background-color: black; /* Blue background for button */
+    border: none; /* No border */
+    padding: 10px 15px; /* Smaller padding for button */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* White text */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover */
+    display: block;
+    width: 150px; /* Smaller width for button */
+    margin: 20px auto 0;
+    margin-left: 50%; 
+    
+}
+
+.btn-primary:hover {
+    background-color: grey; /* Darker blue on hover */
+    box-shadow: 0 4px 10px White; /* Dark blue shadow on hover */
+}

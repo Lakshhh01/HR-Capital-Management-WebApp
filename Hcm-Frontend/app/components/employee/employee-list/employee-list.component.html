@@ -1,0 +1,48 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Employees List</h2>
+  </div>
+  <div class="panel-body">
+    <table id="example" class="table table-dark table-hover" cellspacing="0" width="100%">
+      <thead class="table table-primary tbale-hover">
+        <tr>
+          <th>EmpId</th>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>DOB</th>
+          <th>Address</th>
+          <th>Core Skill</th>
+          <th>YOE</th>
+          <th>DeptId</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Logic for displaying employee details -->
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.empId }}</td>
+          <td>{{ employee.empName }}</td>
+          <td>{{ employee.salary }}</td>
+          <td>{{ employee.gender }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.dob }}</td>
+          <td>{{ employee.address }}</td>
+          <td>{{ employee.coreskill }}</td>
+          <td>{{ employee.experienceInYears }}</td>
+          <td>{{ employee.department ? employee.department.deptID || 'No Department' : 'No Department' }}</td>
+          <td>
+            <!-- Actions: Edit and Delete buttons -->
+            <button style='margin-left:10px' class="btn btn-outline-danger" (click)="deleteEmployee(employee.empId)">
+              <i class="bi bi-trash"></i>
+            </button>
+            <button style='margin-right:16px' class="btn btn-outline-info" (click)="updateEmployee(employee.empId)">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>   
+     </table>
+  </div>
+</div>

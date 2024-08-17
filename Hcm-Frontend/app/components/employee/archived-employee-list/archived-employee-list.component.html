@@ -1,0 +1,43 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Ex-Employees </h2>
+    </div>
+    <div class="panel-body">
+      <table id="example" class="table table-secondary table-hover" cellspacing="0" width="100%">
+        <thead class="table table-primary table-hover">
+          <tr>
+            <th>EmpId</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>DOB</th>
+            <th>Address</th>
+            <th>Core Skill</th>
+            <th>YOE</th>
+            <th>DeptId</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            <!-- Logic for displaying employee details -->
+            <tr *ngFor="let employee of archivedEmployees">
+              <td>{{ employee.empId }}</td>
+              <td>{{ employee.empName }}</td>
+              <td>{{ employee.salary }}</td>
+              <td>{{ employee.gender }}</td>
+              <td>{{ employee.email }}</td>
+              <td>{{ employee.dob }}</td>
+              <td>{{ employee.address }}</td>
+              <td>{{ employee.coreskill }}</td>
+              <td>{{ employee.experienceInYears }}</td>
+              <td>{{ employee.department ? employee.department.deptID || 'No Department' : 'No Department' }}</td>
+              
+            </tr>
+          </tbody> 
+          </table>
+          </div>  
+    
+  </div>
+  

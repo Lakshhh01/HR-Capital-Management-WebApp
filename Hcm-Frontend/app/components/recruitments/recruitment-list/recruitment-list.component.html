@@ -1,0 +1,29 @@
+<div class="table-container">
+  <h3 class="h3">Departmentwise Recruitments
+    <button class="btn btn-secondary" ><a class="nav-link" routerLink="/create-recruitment" routerLinkActive="active">+Add Recruitment</a></button>
+  </h3>
+  <table class="recruitment-table">
+    <thead>
+      <tr>
+        <th>Department Name</th>
+        <th>Vacancies</th>
+        <th>Skills Required</th>
+        <th>Experience Required</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let recruitment of recruitments">
+        <td>{{ recruitment.deptName }}</td>
+        <td>{{ recruitment.noOfVacancies }}</td>
+        <td>{{ recruitment.skillRequired }}</td>
+        <td>{{ recruitment.minYearOfExperience }} years</td>
+        <td class="table-actions">
+          <button (click)="updateRecruitment(recruitment.recruitmentId)" class="btn btn-outline-info"><i class="bi bi-pencil-square"></i></button>
+          <button (click)="deleteRecruitment(recruitment.recruitmentId)" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

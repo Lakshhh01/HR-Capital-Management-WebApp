@@ -1,0 +1,51 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Edit Employee</h2>
+    </div>
+    <div class="panel-body">
+      <form (ngSubmit)="updateEmployee()">
+        <div class="form-group">
+          <label for="empId">EmpId</label>
+          <input type="text" id="empId" class="form-control" [(ngModel)]="employee.empId" name="empId" readonly>
+        </div>
+        <div class="form-group">
+          <label for="empName">Name</label>
+          <input type="text" id="empName" class="form-control" [(ngModel)]="employee.empName" name="empName" required>
+        </div>
+        <div class="form-group">
+          <label for="salary">Salary</label>
+          <input type="number" id="salary" class="form-control" [(ngModel)]="employee.salary" name="salary" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <input type="text" id="gender" class="form-control" [(ngModel)]="employee.gender" name="gender" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" [(ngModel)]="employee.email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" class="form-control" [(ngModel)]="employee.dob" name="dob" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" class="form-control" [(ngModel)]="employee.address" name="address" required>
+        </div>
+        <div class="form-group">
+          <label for="coreskill">Core Skill</label>
+          <input type="text" id="coreskill" class="form-control" [(ngModel)]="employee.coreskill" name="coreskill" required>
+        </div>
+        <div class="form-group">
+          <label for="experienceInYears">Years of Experience</label>
+          <input type="number" id="experienceInYears" class="form-control" [(ngModel)]="employee.experienceInYears" name="experienceInYears" required>
+        </div>
+        <div class="form-group">
+          <label for="department">Department ID</label>
+          <input type="text" id="department" class="form-control" [(ngModel)]="employee.department.deptID" name="department" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+    </div>
+  </div>
+  
